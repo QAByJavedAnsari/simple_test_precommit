@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Post-commit hook triggered."
+
+# Run CI/CD Pipeline or Deployment
+# This example assumes you have a CI/CD pipeline that can be triggered via a command or API call.
+echo "Triggering CI/CD pipeline..."
+curl -X POST https://ci.example.com/api/v1/trigger-pipeline?branch=$(git branch --show-current)
+
+# Notify team or update issue tracking system
+echo "Notifying team or updating issue tracker..."
+# Replace with real webhook or integration commands
+
+echo "Post-commit hook completed."
+
