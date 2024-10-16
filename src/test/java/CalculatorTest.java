@@ -20,4 +20,11 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         assertThrows(IllegalArgumentException.class, () -> calc.divide(1, 0));
     }
+
+    @Test
+    public void testDivide() {
+        Calculator calc = new Calculator();
+        assertEquals(2, calc.divide(4, 2));
+    }
 }
+
